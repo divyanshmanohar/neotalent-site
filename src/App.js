@@ -52,7 +52,7 @@ export default function App() {
 
       <footer className="footer">© 2025 NeoTalent. All rights reserved.</footer>
       <a
-  href="https://wa.me/8400263683"
+  href="https://wa.me/+918400263683"
   className="whatsapp-fab"
   target="_blank"
   rel="noopener noreferrer"
