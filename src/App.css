@@ -1,62 +1,72 @@
+/* ==== Global Styles ==== */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9faff;
-  color: #121f31;
+  background-color: #f9faff; /* Light background for the whole page */
+  color: #121f31; /* Default dark text */
 }
 
-/* Full-width navbar */
+/* ==== NAVBAR ==== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1.2rem 2rem;
-  background: #1e2a42; /* light grey */
-  color: #e41d48;
+  background: #1e2a42; /* Dark navy-blue navbar */
+  color: #e41d48;       /* Accent color (logo text) */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #e2e6ec; /* dark grey */
+  color: #e2e6ec; /* Light grey logo text */
 }
 
-.nav-links a { /*this is for About Submit Resume etc*/
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-links a {
   margin-left: 20px;
   text-decoration: none;
-  color: #e7e8eb; /* slightly darker */
+  color: #e7e8eb; /* Navbar link text (light grey) */
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #1f2937;
+  color: #1f2937; /* Slightly darker on hover */
 }
-/* Full-width hero */
+
+/* ==== HERO ==== */
 .hero {
   text-align: center;
   padding: 80px 20px 60px;
-  background: #eef2ff;
+  background: #eef2ff; /* Light lavender-blue hero section */
 }
 
-.hero h1 { /*connecting Talent to Oppo..*/
+.hero h1 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: #1f2937; /* Deep grey for title */
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #4b5563;
+  color: #4b5563; /* Medium grey */
   margin-bottom: 2rem;
 }
 
 .cta-button {
-  background-color: #6366f1;
+  background-color: #6366f1; /* Indigo primary CTA button */
   color: white;
   padding: 14px 28px;
   border-radius: 999px;
@@ -68,20 +78,21 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #4f46e5;
+  background-color: #4f46e5; /* Darker indigo on hover */
 }
 
-/* Centered content sections */
+/* ==== MAIN CONTENT WRAPPER ==== */
 .main-wrapper {
   max-width: 1000px;
   margin: auto;
   padding: 0 20px;
 }
 
+/* ==== SECTION BLOCKS ==== */
 .section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff; /* Pure white content background */
   border-radius: 12px;
   margin: 40px 0;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -90,10 +101,10 @@ body {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1e40af;
+  color: #1e40af; /* Blue header for sections */
 }
 
-/* Form */
+/* ==== RESUME FORM ==== */
 .resume-form {
   display: flex;
   flex-direction: column;
@@ -105,13 +116,13 @@ body {
 .resume-form input,
 .resume-form button {
   padding: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d1d5db; /* Light grey border */
   border-radius: 6px;
   font-size: 1rem;
 }
 
 .resume-form button {
-  background-color: #4f46e5;
+  background-color: #4f46e5; /* Indigo button */
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -119,12 +130,47 @@ body {
 }
 
 .resume-form button:hover {
-  background-color: #4338ca;
+  background-color: #4338ca; /* Darker indigo on hover */
 }
 
+/* ==== FOOTER ==== */
 .footer {
   text-align: center;
   padding: 30px 10px;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #6b7280; /* Muted grey footer text */
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
 }
