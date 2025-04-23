@@ -51,6 +51,20 @@ export default function App() {
       </div>
 
       <footer className="footer">© 2025 NeoTalent. All rights reserved.</footer>
+      <a
+  href="https://wa.me/8400263683"
+  className="whatsapp-fab"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Chat on WhatsApp"
+>
+<img
+  src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
+  alt="WhatsApp"
+  className="whatsapp-icon"
+/>
+</a>
+      
     </div>
   );
 }
