@@ -78,7 +78,9 @@ export default function App() {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">NeoTalent</div>
+        <div className="logo">
+        <img src="/check3.png" alt="NeoTalent Logo" className="logo-image" />
+        </div>
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#resume">Submit Resume</a>
@@ -172,7 +174,7 @@ export default function App() {
             </div>
           ) : (
             <form 
-              action="https://formspree.io/f/xnndnvpb" 
+              action="https://formspree.io/f/mwpopbqv"
               method="POST" 
               encType="multipart/form-data"
               onSubmit={handleResumeSubmit}
@@ -197,7 +199,7 @@ export default function App() {
             </div>
           ) : (
             <form 
-              action="https://formspree.io/f/mldbdnjv" 
+              action="https://formspree.io/f/xjkwkroo"
               method="POST"
               onSubmit={handleContactSubmit}
               className="contact-form centered"
@@ -212,7 +214,7 @@ export default function App() {
           <div className="contact-info centered-info">
             <div className="contact-item">
               <span className="contact-icon">📧</span>
-              <p>shalinisri.ss.143@gmail.com</p>
+              <p>shalinisrivastava7524@gmail.com </p>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📞</span>
