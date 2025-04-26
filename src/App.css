@@ -11,8 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  background: #323949; /* Navy blue */
+  padding: 8px 20px; /* or 6px if you want very slim */
+  background: #323949;
   color: #e41d48;
   position: sticky;
   top: 0;
